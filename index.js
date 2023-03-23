@@ -10,7 +10,7 @@ const server = express();
 
 const port = process.env.PORT || 3000;
 
-server.get('/hello', (req,res)=> {
+server.get('/merhaba', (req,res)=> {
     res.status(200).json(process.env.MESSAGE || 'Merhaba...');
 })
 
