@@ -11,6 +11,7 @@ const server = express();
 const port = process.env.PORT || 3000;
 
 server.get('/merhaba', (req,res)=> {
+    console.log(req.url);
     res.status(200).json(process.env.MESSAGE || 'Merhaba...');
 })
 
